@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nohup 2>/dev/null firefox 'https://nomade.etu.univ-nantes.fr/+CSCOE+/logon.html#form_title_text' >/dev/null &

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nohup 2>/dev/null firefox 'https://webmail-etu.univ-nantes.fr/src/login.php' >/dev/null &

@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ $# -eq 0 ]; then
+  nohup 2>/dev/null xdg-open . >/dev/null &
+else
+  for file in "$@"; do
+    nohup 2>/dev/null xdg-open "$file" >/dev/null &
+  done
+fi
