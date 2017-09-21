@@ -1,5 +1,6 @@
 ### variables d'environnement
 	
+	export PATH=~/bin:$PATH
 	export PHP1=smb://infoweb/public_html/php/
 	export PHP2=http://infoweb/~e154860b/php/
 	export INFOWEB=/run/user/230618/gvfs/smb-share:server=infoweb,share=public_html
