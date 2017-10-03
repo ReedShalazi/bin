@@ -1,5 +1,5 @@
 ### variables d'environnement
-	
+
 	export PATH=~/bin:$PATH
 	export PHP1=smb://infoweb/public_html/php/
 	export PHP2=http://infoweb/~e154860b/php/
@@ -45,7 +45,8 @@
 	alias sagiy="sudo apt-get install -y"
 	alias sagu="sudo apt-get update && sudo apt-get update"
 	alias sos="killall -u $USER"
-		
+	alias youtube-dl="youtube-dl --geo-bypass --no-check-certificate --prefer-insecure --no-part --prefer-avconv --ignore-errors --no-warnings --extract-audio --audio-format vorbis"
+
 	alias cd..='cd ..'
 	cd../.. () { cd ../..; }
 	cd../../.. () { cd ../../..; }
