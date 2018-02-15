@@ -1,9 +1,6 @@
 ### variables d'environnement
 
 	export PATH=~/bin:$PATH
-	export PHP1=smb://infoweb/public_html/php/
-	export PHP2=http://infoweb/~e154860b/php/
-	export INFOWEB=/run/user/230618/gvfs/smb-share:server=infoweb,share=public_html
 ###
 
 
@@ -43,7 +40,7 @@
 	alias acs='apt-cache search'
 	alias sagi="sudo apt-get install"
 	alias sagiy="sudo apt-get install -y"
-	alias sagu="sudo apt-get update && sudo apt-get update"
+	alias sagu="sudo apt-get update && sudo apt-get upgrade"
 	alias sos="killall -9 -u $USER"
 	alias youtube-dl='youtube-dl --no-check-certificate --prefer-insecure --no-part --geo-bypass --prefer-avconv --ignore-errors --no-warnings --extract-audio --audio-format vorbis'
 
