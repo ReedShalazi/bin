@@ -42,6 +42,7 @@
 	alias sagiy="sudo apt-get install -y"
 	alias sagu="sudo apt-get update && sudo apt-get upgrade"
 	alias sos="killall -9 -u $USER"
+	alias pl="swipl -f"
 	alias youtube-dl='youtube-dl --no-check-certificate --prefer-insecure --no-part --geo-bypass --prefer-avconv --ignore-errors --no-warnings --extract-audio --audio-format vorbis'
 
 	alias cd..='cd ..'
