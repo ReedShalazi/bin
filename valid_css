@@ -1,3 +1,2 @@
 #!/bin/bash
-
-nohup 2>/dev/null firefox 'https://jigsaw.w3.org/css-validator/#validate_by_upload' >/dev/null &
+nohup 2>/dev/null firefox 'https://jigsaw.w3.org/css-validator/#validate_by_upload' >/dev/null

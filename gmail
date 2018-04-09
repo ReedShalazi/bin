@@ -1,3 +1,2 @@
 #!/bin/bash
-
-nohup 2>/dev/null firefox 'https://mail.google.com/mail/' >/dev/null &
+nohup 2>/dev/null firefox 'https://mail.google.com/mail/' >/dev/null
