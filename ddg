@@ -1,2 +1,2 @@
 #!/bin/bash
-nohup 2>/dev/null firefox "https://duckduckgo.com/?q=$*" >/dev/null
+nohup 2>/dev/null firefox "https://duckduckgo.com/?q=$*" >/dev/null &
