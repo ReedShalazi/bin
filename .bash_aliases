@@ -47,5 +47,6 @@ cd../../../.. () { cd ../../../..; }
 
 ### petits réglages
 
+export LESSCHARSET="utf-8"
 shopt -s checkwinsize # redimensionner la sortie en fonction de la fenêtre
 #xfdesktop # être sûr d'avoir un bureau au démarrage
