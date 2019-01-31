@@ -31,10 +31,13 @@ alias param="xfce4-settings-manager &"
 alias youtube-dl='youtube-dl --no-check-certificate --prefer-insecure --no-part --geo-bypass --prefer-avconv --ignore-errors --no-warnings --extract-audio --audio-format vorbis'
 
 alias gcc="gcc -std=c99 -Wall -Wextra -pedantic -Wno-unused-parameter"
+alias g++='g++ -std=c++11 -Wall -Wextra -pedantic -Wno-unused-parameter'
 alias gdb="gdb -q"
 alias R="R -q"
 alias javadoc="javadoc -author -version -encoding utf8 -docencoding utf8 -charset utf8"
 alias caml="ocaml"
+alias pulse="/usr/local/pulse/PulseClient_x86_64.sh"
+alias pulseui="/usr/local/pulse/pulseUi"
 
 alias acs='apt-cache search'
 alias sagi="sudo apt-get install"
