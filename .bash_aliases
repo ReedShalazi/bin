@@ -54,3 +54,6 @@ cd../../../.. () { cd ../../../..; }
 export LESSCHARSET="utf-8"
 shopt -s checkwinsize # redimensionner la sortie en fonction de la fenêtre
 #xfdesktop # être sûr d'avoir un bureau au démarrage
+
+# [[ -f "$HOME/.bash_aliases" ]] && source "$HOME/.bash_aliases"
+
