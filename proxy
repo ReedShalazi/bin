@@ -1,0 +1,37 @@
+#!/bin/bash
+
+if [ $(id -u) -ne 0 ] ; then
+    echo 'pls run as root'
+    exit 1
+fi
+
+host="$(echo "$1" | sed -r 's#^([^:]+):[^:]+$#\1#')"
+port="$(echo "$1" | sed -r 's#^[^:]+:([^:]+)$#\1#')"
+
+case "$#" in
+    0)
+
+        nohup &>/dev/null gsettings set org.gnome.system.proxy mode 'none'
+
+        nohup &>/dev/null sed -ri "s%^(https?_proxy=http://.*)$%#\1%ig" /etc/environment
+
+        >/etc/apt/apt.conf.d/95proxies
+
+    ;; 1)
+
+        gsettings set org.gnome.system.proxy mode 'manual'
+        gsettings set org.gnome.system.proxy.http host "${host}"
+        gsettings set org.gnome.system.proxy.http port "${port}"
+
+        sed -ri "s%^#?(https?_proxy=http://).*$%\1${host}:${port}%ig" /etc/environment
+
+        echo -e " \
+            Acquire::http::proxy \"http://${host}:${port}\";\n\
+            Acquire::https::proxy \"http://${host}:${port}\";\n\
+            Acquire::ftp::proxy \"ftp://${host}:${port}\";\n\
+        " > /etc/apt/apt.conf.d/95proxies
+
+    ;; *) echo 'bad usage' ;;
+esac
+
+echo 'pls dc/rc'

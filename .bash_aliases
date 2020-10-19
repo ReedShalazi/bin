@@ -1,6 +1,7 @@
 ### variables d'environnement
 
 export PATH=~/bin:$PATH
+export EDITOR=vim
 
 ### meilleure utilisation de l'historique
 
@@ -25,7 +26,7 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 ### alias
 
-alias refresh='exec $SHELL'i
+alias refresh='exec $SHELL'
 alias sudo='sudo -E env "PATH=$PATH"'
 alias sos="killall -9 -u $USER"
 alias param="xfce4-settings-manager &"
