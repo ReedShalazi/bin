@@ -25,11 +25,12 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 ### alias
 
-alias refresh='exec $SHELL'
+alias refresh='exec $SHELL'i
+alias sudo='sudo -E env "PATH=$PATH"'
 alias sos="killall -9 -u $USER"
 alias param="xfce4-settings-manager &"
-alias youtube-dl='youtube-dl --no-check-certificate --prefer-insecure --no-part --geo-bypass --prefer-avconv --ignore-errors --no-warnings --extract-audio --audio-format vorbis --no-overwrites --console-title'
 
+alias youtube-dl='youtube-dl --no-check-certificate --prefer-insecure --no-part --geo-bypass --prefer-avconv --ignore-errors --no-warnings --extract-audio --audio-format vorbis --no-overwrites --console-title'
 alias gcc="gcc -std=c99 -Wall -Wextra -pedantic -Wno-unused-parameter"
 alias g++='g++ -std=c++11 -Wall -Wextra -pedantic -Wno-unused-parameter'
 alias gdb="gdb -q"
