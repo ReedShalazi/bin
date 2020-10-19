@@ -1,2 +1,0 @@
-#!/bin/bash
-nohup 2>/dev/null firefox 'https://cas-ha.univ-nantes.fr/esup-cas-server/login?service=http%3A%2F%2Fmadoc.univ-nantes.fr%2Flogin%2Findex.php%3FauthCAS%3DCAS%26Submit%3DAcc%25C3%25A9dez%2B%25C3%25A0%2Bvos%2Bcours' >/dev/null
